@@ -1,4 +1,3 @@
-# data_compression_motivation
-Why to compress?
+# Why to compress?
 
-[Click me](https://cdn.rawgit.com/vicente-gonzalez-ruiz/data_compression_motivation/master/index.html).
+[Click me](https://cdn.rawgit.com/vicente-gonzalez-ruiz/why_to_compress/master/index.html).
