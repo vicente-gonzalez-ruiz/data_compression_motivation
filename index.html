@@ -29,27 +29,213 @@ class="ecrm-1200">lez Ruiz</span></div><br />
 class="ecrm-1200">December 29, 2018</span></div>
    </div>
    <div class="tableofcontents">
-   <span class="likesectionToc" ><a 
-href="indexli1.html#x2-1000" id="QQ2-2-1">Contents</a></span>
-<br />   <span class="sectionToc" >1 <a 
-href="indexse1.html#x3-20001" id="QQ2-3-2">Why to compress?</a></span>
+   <span class="sectionToc" >1 <a 
+href="#x1-10001" id="QQ2-1-1">Why to compress?</a></span>
 <br />   <span class="sectionToc" >2 <a 
-href="indexse2.html#x4-30002" id="QQ2-4-3">Which data?</a></span>
+href="#x1-20002" id="QQ2-1-2">Which data?</a></span>
 <br />   <span class="sectionToc" >3 <a 
-href="indexse3.html#x5-40003" id="QQ2-5-4">Why these sources?</a></span>
+href="#x1-30003" id="QQ2-1-3">Why these sources?</a></span>
 <br />   <span class="sectionToc" >4 <a 
-href="indexse4.html#x6-50004" id="QQ2-6-5">Lab (audio comparison)</a></span>
+href="#x1-40004" id="QQ2-1-4">Lab (audio comparison)</a></span>
 <br />   <span class="sectionToc" >5 <a 
-href="indexse5.html#x7-60005" id="QQ2-7-6">Lab (image comparison)</a></span>
+href="#x1-50005" id="QQ2-1-5">Lab (image comparison)</a></span>
 <br />   <span class="sectionToc" >6 <a 
-href="indexse6.html#x8-70006" id="QQ2-8-7">Memory requirements of PCM video</a></span>
+href="#x1-60006" id="QQ2-1-6">Memory requirements of PCM video</a></span>
    </div>
+   <h3 class="sectionHead"><span class="titlemark">1   </span> <a 
+ id="x1-10001"></a>Why to compress?</h3>
+     <ul class="itemize1">
+     <li class="itemize">Data compression can reduce the memory requirements of (almost) any
+     kind of information source.</li></ul>
+<!--l. 17--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">2   </span> <a 
+ id="x1-20002"></a>Which data?</h3>
+     <ul class="itemize1">
+     <li class="itemize">Mainly … audio, image, and video signals.</li></ul>
+                                                                  
 
+                                                                  
+<!--l. 22--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">3   </span> <a 
+ id="x1-30003"></a>Why these sources?</h3>
+     <ul class="itemize1">
+     <li class="itemize">After the digitalization of any signal we get a sequence <!--l. 25--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>s</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow></mrow><mo 
+class="MathClass-close">]</mo></mrow></mrow></math>
+     of samples that represent the signal <!--l. 25--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>s</mi></mrow></math>
+     with more or less ﬁdelity.
+     </li>
+     <li class="itemize">Usually, <!--l. 26--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>s</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow></mrow><mo 
+class="MathClass-close">]</mo></mrow></mrow></math>
+     is encoded using PCM (Pulse Code Modulation), in which every sample
+     <!--l. 26--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>s</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>i</mi></mrow><mo 
+class="MathClass-close">]</mo></mrow></mrow></math>
+     is represented with the same number of bits.
+     </li>
+     <li class="itemize">Most digital PCM signals are memory demanding. For example, in a CD
+     we have a data-rate of</li></ul>
+   <table class="equation"><tr><td> <a 
+ id="x1-3001r1"></a>
+<!--l. 30--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+          <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn><mn>6</mn> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn><mn>6</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow>  <mfrac><mrow 
+><mstyle 
+class="text"><mtext  >bits</mtext></mstyle></mrow>
+<mrow 
+><mstyle 
+class="text"><mtext  >sample</mtext></mstyle></mrow></mfrac> <mo 
+class="MathClass-bin">×</mo> <mn>4</mn><mn>4</mn><mo 
+class="MathClass-punc">.</mo><mn>1</mn><mn>0</mn><mn>0</mn><mfrac><mrow 
+><mstyle 
+class="text"><mtext  >samples</mtext></mstyle></mrow>
+ <mrow 
+><mstyle 
+class="text"><mtext  >second</mtext></mstyle></mrow></mfrac>  <mo 
+class="MathClass-rel">=</mo> <mn>1</mn><mo 
+class="MathClass-punc">.</mo><mn>4</mn><mn>1</mn><mn>1</mn><mo 
+class="MathClass-punc">.</mo><mn>2</mn><mn>0</mn><mn>0</mn>  <mfrac><mrow 
+><mstyle 
+class="text"><mtext  >bits</mtext></mstyle></mrow>
+<mrow 
+><mstyle 
+class="text"><mtext  >second</mtext></mstyle></mrow></mfrac><mo 
+class="MathClass-punc">.</mo>
+</math></td><td class="eq-no">(1)</td></tr></table>
+     <ul class="itemize1">
+     <li class="itemize">Image and video signals require much more memory.</li></ul>
+<!--l. 40--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">4   </span> <a 
+ id="x1-40004"></a>Lab (audio comparison)</h3>
+<!--l. 41--><p class="noindent" ><a 
+href="https://nbviewer.jupyter.org/github/vicente-gonzalez-ruiz/why_to_compress/blob/master/lab1.ipynb" >IPython notebook</a>
+                                                                  
 
+                                                                  
+</p><!--l. 43--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">5   </span> <a 
+ id="x1-50005"></a>Lab (image comparison)</h3>
+<!--l. 44--><p class="noindent" ><a 
+href="https://nbviewer.jupyter.org/github/vicente-gonzalez-ruiz/why_to_compress/blob/master/lab2.ipynb" >IPython notebook</a>
+</p><!--l. 46--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">6   </span> <a 
+ id="x1-60006"></a>Memory requirements of PCM video</h3>
+     <ul class="itemize1">
+     <li class="itemize">In RGB (PCM) video, each color pixel need at least 24 bpp (bits/pixel).
+     </li>
+     <li class="itemize">The memory requirements of RGB video are enormous. For example, an
+     hour of <!--l. 52--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mn>6</mn><mn>4</mn><mn>0</mn> <mo 
+class="MathClass-bin">×</mo> <mn>4</mn><mn>8</mn><mn>0</mn> <mo 
+class="MathClass-bin">×</mo> <mn>2</mn><mn>5</mn></mrow></math>
+     Hz true-color of PCM video needs:</li></ul>
+   <table class="equation"><tr><td> <a 
+ id="x1-6001r2"></a>
+<!--l. 56--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+        <mn>2</mn><mn>5</mn><mfrac><mrow 
+><mstyle 
+class="text"><mtext  >images</mtext></mstyle></mrow>
+<mrow 
+><mstyle 
+class="text"><mtext  >second</mtext></mstyle></mrow></mfrac> <mo 
+class="MathClass-bin">×</mo> <mn>6</mn><mn>4</mn><mn>0</mn> <mo 
+class="MathClass-bin">⋅</mo> <mn>4</mn><mn>8</mn><mn>0</mn><mfrac><mrow 
+><mstyle 
+class="text"><mtext  >pixels</mtext></mstyle></mrow>
+<mrow 
+><mstyle 
+class="text"><mtext  >image</mtext></mstyle></mrow></mfrac> <mo 
+class="MathClass-bin">×</mo> <mn>2</mn><mn>4</mn> <mfrac><mrow 
+><mstyle 
+class="text"><mtext  >bits</mtext></mstyle></mrow>
+<mrow 
+><mstyle 
+class="text"><mtext  >pixel</mtext></mstyle></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn><mn>8</mn><mn>4</mn><mo 
+class="MathClass-punc">.</mo><mn>3</mn><mn>2</mn><mn>0</mn><mo 
+class="MathClass-punc">.</mo><mn>0</mn><mn>0</mn><mn>0</mn>  <mfrac><mrow 
+><mstyle 
+class="text"><mtext  >bits</mtext></mstyle></mrow>
+<mrow 
+><mstyle 
+class="text"><mtext  >second</mtext></mstyle></mrow></mfrac>
+</math></td><td class="eq-no">(2)</td></tr></table>
+   <table class="equation"><tr><td> <a 
+ id="x1-6002r3"></a>
+<!--l. 63--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+      <mn>1</mn><mn>8</mn><mn>4</mn><mo 
+class="MathClass-punc">.</mo><mn>3</mn><mn>2</mn><mn>0</mn><mo 
+class="MathClass-punc">.</mo><mn>0</mn><mn>0</mn><mn>0</mn>  <mfrac><mrow 
+><mstyle 
+class="text"><mtext  >bits</mtext></mstyle></mrow>
+<mrow 
+><mstyle 
+class="text"><mtext  >second</mtext></mstyle></mrow></mfrac> <mo 
+class="MathClass-bin">×</mo> <mn>3</mn><mo 
+class="MathClass-punc">.</mo><mn>6</mn><mn>0</mn><mn>0</mn><mfrac><mrow 
+><mstyle 
+class="text"><mtext  >seconds</mtext></mstyle></mrow>
+  <mrow 
+><mstyle 
+class="text"><mtext  >hour</mtext></mstyle></mrow></mfrac>   <mo 
+class="MathClass-bin">×</mo> <mfrac><mrow 
+><mn>1</mn><mspace width="1em" class="nbsp" /><mstyle 
+class="text"><mtext  >G</mtext></mstyle></mrow> 
+<mrow 
+><mn>1</mn><mo 
+class="MathClass-punc">.</mo><mn>0</mn><mn>2</mn><msup><mrow 
+><mn>4</mn></mrow><mrow 
+><mn>3</mn></mrow></msup 
+></mrow></mfrac> <mo 
+class="MathClass-bin">×</mo><mfrac><mrow 
+><mn>1</mn><mspace width="1em" class="nbsp" /><mstyle 
+class="text"><mtext  >byte</mtext></mstyle></mrow> 
+<mrow 
+><mn>8</mn><mspace width="1em" class="nbsp" /><mstyle 
+class="text"><mtext  >bits</mtext></mstyle></mrow></mfrac>  <mo 
+class="MathClass-rel">≈</mo> <mn>7</mn><mn>7</mn><mspace width="1em" class="nbsp" /><mstyle 
+class="text"><mtext  >Gbytes</mtext></mstyle>
+</math></td><td class="eq-no">(3)</td></tr></table>
+                                                                  
 
-
-
- 
+                                                                  
+     <ul class="itemize1">
+     <li class="itemize">Video coding techniques should be used to compress this data. Most of
+     these techniques are bases on Block-based Motion Estimation.</li></ul>
+    
 </body> 
 </html>
                                                                   
