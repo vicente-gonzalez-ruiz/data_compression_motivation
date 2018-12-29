@@ -1,0 +1,95 @@
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "<none>"
+%%% End:
+
+\title{Why to compress?}
+\author{Vicente González Ruiz}
+
+\maketitle
+\tableofcontents
+
+\section{Why to compress?}
+\begin{itemize}
+\item
+  Data compression can reduce the memory requirements of (almost) any
+  kind of information source.
+\end{itemize}
+
+\subsubsection{Which data?}\label{which-data}
+\begin{itemize}
+\item
+  Mainly \ldots{} audio, image, and video signals.
+\end{itemize}
+
+\subsubsection{Why these sources?}
+
+\begin{itemize}
+\item
+  After the digitalization of any signal we get a sequence \(s[]\) of
+  samples that represent the signal \(s\) with more or less fidelity.
+\item
+  Usually, \(s[]\) is encoded using PCM (Pulse Code Modulation), in
+  which every sample \(s[i]\) is represented with the same number of
+  bits.
+\item
+  Most digital PCM signals are memory demanding. For example, in a CD we
+  have a data-rate of
+\end{itemize}
+
+\begin{equation}
+    (16+16)\frac{\text{bits}}{\text{sample}}\times
+    44{.}100\frac{\text{samples}}{\text{second}}=
+    1{.}411{.}200\frac{\text{bits}}{\text{second}}.
+\end{equation}
+
+\begin{itemize}
+\tightlist
+\item
+  Image and video signals require much more memory.
+\end{itemize}
+
+\subsubsection{Lab (audio comparison)}
+
+TO-DO
+
+Compress a WAV audio file to MP3 with LAME at 128 kbps. Decompress to
+obtain again a WAV file. Substract the original and the decompressed
+WAVs and listen it.
+
+\subsubsection{Lab (image comparison)}
+\href{}{}
+
+\subsection{Memory requirements of PCM video}
+
+\begin{itemize}
+\item
+  In RGB (PCM) video, each color pixel need at least 24 bpp
+  (bits/pixel).
+\item
+  The memory requirements of RGB video are enormous. For example, an
+  hour of \(640\times 480\times 25\) Hz true-color of PCM video needs:
+\end{itemize}
+
+\begin{equation}
+    25\frac{\text{images}}{\text{second}}\times
+    640\cdot 480\frac{\text{pixels}}{\text{image}}\times
+    24\frac{\text{bits}}{\text{pixel}}=
+    184{.}320{.}000\frac{\text{bits}}{\text{second}}
+\end{equation}
+
+\begin{equation}
+    184{.}320{.}000\frac{\text{bits}}{\text{second}} \times
+    3{.}600\frac{\text{seconds}}{\text{hour}} \times
+    \frac{1~\text{G}}{1{.}024^3}\times
+    \frac{1~\text{byte}}{8~\text{bits}} \approx
+    77~\text{Gbytes}
+\end{equation}
+
+\begin{itemize}
+\tightlist
+\item
+  Video coding techniques should be used to compress this data. Most of
+  these techniques are bases on Block-based Motion Estimation.
+\end{itemize}
+
